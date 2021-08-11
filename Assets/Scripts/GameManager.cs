@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,6 +49,8 @@ public class GameManager : MonoBehaviour
         if (GameManager.Instance.gamePause == false)
         {
             timeLeft -= Time.deltaTime;
+            int i = (int)Math.Ceiling(timeLeft);
+            uiManager.ShowTimeLeftCount(i);
             if (timeLeft < 0.1f)
             {
                 GameOver();

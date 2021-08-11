@@ -34,7 +34,7 @@ public class UiManager : MonoBehaviour
     {
         lifeCount.text = currentLife.ToString();
     }
-    public void ShowTimeLeftCount(float timeLeft)
+    public void ShowTimeLeftCount(int timeLeft)
     {
         timeLeftCount.text = timeLeft.ToString();
     }
