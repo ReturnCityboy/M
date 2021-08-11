@@ -122,6 +122,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+    //게임오버 연속 호출 오류
         gameOver = true;
         Save();
         uiManager.OnOffPopUp(true);
